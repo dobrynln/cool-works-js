@@ -130,9 +130,9 @@ function dragDrop(e) {
 
 let addBtnTodo = document.querySelector(".add-todo");
 addBtnTodo.addEventListener("click", () => {
-  if (document.querySelector(".input").value > 0) {
+  if (document.querySelector(".input").value.length >= 1) {
     createTodo();
-    textColumn()
+    textColumn();
   }
 });
 
@@ -146,7 +146,7 @@ function createTodo() {
   divTodo.appendChild(txt);
   divTodo.classList.add("drag-wrapper__todo");
   divTodo.setAttribute("draggable", "true");
-
+  console.log(divTodo)
   //span
   let span = document.createElement("span");
   let spanTxt = document.createTextNode("X");
