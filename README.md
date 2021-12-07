@@ -1,2 +1,2 @@
 # dobrynin.js
-testing https://dobrynln.github.io/dobrynin.js/
+testing https://dobrynln.github.io/cool-works-js/
